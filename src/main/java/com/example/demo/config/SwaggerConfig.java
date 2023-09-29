@@ -20,7 +20,7 @@ public class SwaggerConfig {
 	public Docket restApi(){
 		return new Docket(DocumentationType.SWAGGER_2)
 		.select()
-		.apis(RequestHandlerSelectors.basePackage("com.example.demo.resources"))
+		.apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))
 		.paths(PathSelectors.any())
 		.build()
 		.apiInfo(apiInfo());
@@ -34,9 +34,9 @@ public class SwaggerConfig {
 					"1.0",
 					"Terms of service", 
 					 new Contact(
-							 "Ashok", 
-							 "http://www.ashokit.com/", 
-							 "ashokitschool@gmail.com"
+							 "Lasath",
+							 "https://github.com/dev2013slk/SpringBoot-Rest-Swagger-App",
+							 "dev2013slk@gmail.com"
 					),
 					"Apache License Version 2.0",
 					"https://www.apache.org/licenses/LICENSE-2.0"
